@@ -2,14 +2,14 @@
 var generateBtn = document.querySelector("#generate");
 
 
-// Created Arrays of Possible Character Choices(change)
+//Arrays of Possible Character Choices
 var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 var special = ['!','@', '%', '+', '/', '{', ']', '[', '~', '-', '_','#', '$', '?', ')', '(', '}'];
 var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
 
-// Created function to ask user which options and made conditional statements to ensure minimum option requirements were met.(change)
+// Created function to ask user options.
 function askQuestion() {
   var isValid = false;
   do {
@@ -35,7 +35,7 @@ function askQuestion() {
   } while(!isValid);
   return answers;
 }
-// This function joins all the user responses and then creates the result - a strong password.(chan)
+// This function joins all the user responses.
 function makepassword() {
   var options = askQuestion();
   var pattern = [];
